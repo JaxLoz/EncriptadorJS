@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +9,51 @@
 </head>
 <body>
 <header>
-    <na></na>
+    <nav>
+        <img src="/src/Logo.png" alt="logo-alura">
+    </nav>
 </header>
 <main class="main-content">
-    <section class="input-content">
+    <div class="input-content">
         <div class="textAreaInput-content">
 
         </div>
-    </section>
+        <form class="form-encriptar" id="form-content">
+            
+            <textarea id="area-encriptar" cols="80" rows="30"></textarea>
+            <img src="/src/Advertensia.png" alt="Solo minúsculas y sin acentos">
+            <div class="button-panel">
+                <input type="button" class="btn" id="btn-encriptar" value="Encriptar">
+                <input type="button" class="btn" id="btn-desencriptar" value="Desencriptar">
+            </div>
+        </form>
+        
+    </div>
 
-    <section class="output-content">
-        <div class="textAreaOutPut-content">
-
+    <div class="output-content">
+        <div class="output-div" id="img-content">
+            <img src="/src/Muñeco.png" alt="ilustracion desencriptado">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
-    </section>
+        <div class="output-div" id="textAreaOutPut-content">
+            
+            <textarea id="area-desencriptar" cols="40" rows="30"></textarea>
+            <input type="button" class="btn" id="btn-copiar" value="Copiar">
+        </div> 
+
+    </div>
     
 </main>    
 <footer>
-
+    <div class="foot-div" id="name-content">
+        <p>Javier Eduardo Montes Delgado</p>
+    </div>
+    <div class="foot-div" id="social-content">
+        <a href="https://github.com/JaxLoz" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #0a3871;"></i></a>
+        <a href="https://www.linkedin.com/in/javiermontesdelgado/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0a3871;"></i></a>
+    </div>
 </footer>
+<script src="https://kit.fontawesome.com/f8f5d578b4.js" crossorigin="anonymous"></script>
 </body>
 </html>
