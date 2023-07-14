@@ -33,7 +33,7 @@ function encriptar (){
     let estadoDivImage = divImagen.style.display;
     let estadoDivTexOutput = divTexOutput.style.display;    
 
-    if (campoVacio === false){
+    if (!campoVacio){
         alert("El campo de texto esta vacio o el texto que haz ingresado no es valido");
     }else{
 
@@ -72,6 +72,23 @@ function desencriptar (){
     }
     
 }
+
+function copyText (){
+    let text = areaOut.value;
+    if(validacionContenido(text)){
+        navigator.clipboard.writeText(text)
+        .then(() => {
+            console.log("Se guardo el siguente texto en el portapapeles: "+text);
+        })
+        .catch(err => {
+            console.log("Error al copiar en el portapapeles");
+        })
+    }else{
+        alert("No se encontro texto para copiar");
+    }
+
+    
+}   
 
 
 
