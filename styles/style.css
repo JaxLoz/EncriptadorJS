@@ -1,0 +1,133 @@
+body{
+    background: #F3F5FC;
+}
+
+.logo-content{
+    grid-column: 1 / 2;
+    height: 80px;
+}
+
+#img-logo{
+    margin: 30px 0px 0px 0px;
+    width: 120px;
+    height: 48px;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 9% 700px;
+    gap: 10px;
+
+}
+
+.input-content{
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: center;
+}
+
+.output-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 2;
+    justify-self: end;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+
+    border-radius: 32px;
+    width: 400px;
+    height: 93vh;
+    margin: 40px 40px 0px 0px;
+}
+
+#img-content{
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#imagen-output{
+    width: 300px;
+    height: 268px;
+}
+
+#desFirt-text{
+    color: #343A40;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 120%;
+    width: 336px;
+    margin: 20px 0px 10px 0px;
+}
+
+#desSec-text{
+    
+    color: #495057;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin: 0px;
+    width: 336px;
+}
+
+#textAreaOutPut-content{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2px;
+    height: 100%;
+    width: 100%;
+}
+
+#btn-copiar{
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    width: 336px;
+    padding: 20px;
+    border-radius: 24px;
+    background-color: #FFFFFF;
+    color:#0A3871;
+    border: 1px solid  #0A3871;
+}
+
+#btn-copiar:hover{
+    background-color: #D8DFE8;
+    transition: 0.5s;
+}
+
+
+#area-output {
+    resize: none;
+    font-family: sans-serif;
+    font-style: normal;
+    text-align: left;
+    border: none;
+    color: #495057;
+    font-size: 20px;
+    width: 85%;
+    height: 72%;
+}
+
+#area-output:focus{
+    outline: blue;
+}
+
+
+

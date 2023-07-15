@@ -5,46 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="athor" content="Javier Eduardo Montes Delgado">
+    <link href="/styles/style.css" rel="stylesheet" type="text/css">
+    <link href="/node_modules/normalize.css/normalize.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
     <title>Encriptador</title>
 </head>
 <body>
-<header>
-    <nav>
-        <img src="/src/Logo.png" alt="logo-alura">
-    </nav>
-</header>
-<main class="main-content">
-    <div class="input-content">
-        <div class="textAreaInput-content">
 
+<main class="main-content">
+
+    <div class="logo-content">
+        <img id="img-logo" src="/src/Logo.png" alt="logo-alura">
+    </div>
+
+    <div class="input-content">
+        
+        <div class="textAreaInput-content">
+            <form class="form-encriptar" id="form-content">
+           
+                <textarea id="area-encriptar" cols="80" rows="30"></textarea>
+                <img src="/src/Advertensia.png" alt="Solo minúsculas y sin acentos">
+                
+                <div class="button-panel">
+                    <input type="button" class="btn" id="btn-encriptar" value="Encriptar" onclick="encriptar()">
+                    <input type="button" class="btn" id="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
+                </div>
+                
+            </form>
         </div>
-        <form class="form-encriptar" id="form-content">
-            
-            <textarea id="area-encriptar" cols="80" rows="30"></textarea>
-            <img src="/src/Advertensia.png" alt="Solo minúsculas y sin acentos">
-            <div class="button-panel">
-                <input type="button" class="btn" id="btn-encriptar" value="Encriptar" onclick="encriptar()">
-                <input type="button" class="btn" id="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
-            </div>
-        </form>
         
     </div>
 
     <div class="output-content">
+
         <div class="output-div" id="img-content">
-            <img src="/src/Muñeco.png" alt="ilustracion desencriptado">
-            <p>Ningún mensaje fue encontrado</p>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <img id="imagen-output" src="/src/Muñeco.png" alt="ilustracion desencriptado">
+            <p id="desFirt-text">Ningún mensaje fue encontrado</p>
+            <p id="desSec-text">Ingresa el texto que desees encriptar o desencriptar.</p>
         </div>
+
         <div class="output-div" id="textAreaOutPut-content">
             
-            <textarea id="area-output" cols="40" rows="30"></textarea>
+            <textarea id="area-output" ></textarea>
             <input type="button" class="btn" id="btn-copiar" value="Copiar" onclick="copyText()">
         </div> 
 
     </div>
     
 </main>    
+
 <footer>
     <div class="foot-div" id="name-content">
         <p>Javier Eduardo Montes Delgado</p>
@@ -54,6 +66,7 @@
         <a href="https://www.linkedin.com/in/javiermontesdelgado/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0a3871;"></i></a>
     </div>
 </footer>
+
 <script src="https://kit.fontawesome.com/f8f5d578b4.js" crossorigin="anonymous"></script>
 <script src="/JS/Encriptar.js"></script>
 </body>

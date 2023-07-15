@@ -9,8 +9,8 @@ let areaOut = document.getElementById("area-output");
 let areaInput = document.getElementById("area-encriptar");
 let divImagen = document.getElementById("img-content");
 let divTexOutput = document.getElementById("textAreaOutPut-content");
-divImagen.style.display = "block";
-divTexOutput.style.display = "block";
+divImagen.style.display = "flex";
+divTexOutput.style.display = "none";
 
 function EliminarAcentos (cadena){
     let cadenaSinAcento = cadena.replace(/é/ig, "e").replace(/í/ig, "i").replace(/á/ig, "a").replace(/ó/ig, "o").replace(/ú/ig, "u");
@@ -39,10 +39,10 @@ function encriptar (){
 
         let cadenaLimpia = EliminarAcentos(cadena);
         let cadenaEncript = cadenaLimpia.replace(/e/ig, "enter").replace(/i/ig, "imes").replace(/a/ig, "ai").replace(/o/ig, "ober").replace(/u/ig, "ufat");
-        areaOut.innerHTML = cadenaEncript;
 
         if (estadoDivImage !== "none"){
             divImagen.style.display = "none";
+            divTexOutput.style.display = "flex";
             areaOut.innerHTML = cadenaEncript;
         }else{
             areaOut.innerHTML = cadenaEncript;
@@ -55,7 +55,7 @@ function desencriptar (){
     let cadenaEncriptada = areaInput.value;
     let campoVacio = validacionContenido(cadenaEncriptada);
     let estadoDivImage = divImagen.style.display;
-    let estadoDivTexOutput = divTexOutput.style.display;
+    //let estadoDivTexOutput = divTexOutput.style.display;
 
     if (campoVacio === false){
         alert("El campo de texto esta vacio o el texto que haz ingresado no es valido");
@@ -64,6 +64,7 @@ function desencriptar (){
         let cadenaDesencript = cadenaEncriptada.replace(/enter/ig, "e").replace(/imes/ig, "i").replace(/ai/ig, "a").replace(/ober/ig, "o").replace(/ufat/ig, "u");
         if (estadoDivImage !== "none"){
             divImagen.style.display = "none";
+            divTexOutput.style.display = "flex";
             areaOut.innerHTML = cadenaDesencript;
         }else{
             areaOut.innerHTML = cadenaDesencript;
