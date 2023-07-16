@@ -15,16 +15,114 @@ body{
 
 .main-content{
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 65% 35%;
     grid-template-rows: 9% 700px;
-    gap: 10px;
+    gap: 10px 5px;
 
 }
 
 .input-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
     grid-column: 1;
     grid-row: 2;
-    justify-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.img-advert{
+    
+    align-self: flex-start;
+}
+
+.textAreaInput-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 95%;
+}
+
+.form-encriptar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 10px;
+    width: 95%;
+    height: 100%;
+}
+
+#area-encriptar{
+    resize: none;
+    border: none;
+    background-color: #F3F5FC;
+    font-family: sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    color: #0A3871;
+    font-weight: 400;
+    line-height: 150%;
+    width: 100%;
+    height: 75%;
+}
+
+#area-encriptar:focus{
+    outline: none;
+}
+
+#area-encriptar::placeholder{
+    color: #0A3871;
+}
+
+.button-panel{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn{
+    width: 328px;
+    padding: 20px;
+    border-radius: 24px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    line-height: normal;
+    font-weight: 400;
+   
+}
+
+#btn-encriptar{
+    background-color: #0A3871;
+    color: #FFFFFF;
+    border: #0A3871;
+    transition: 0.5s;
+}
+
+#btn-desencriptar{
+    background-color: #F3F5FC;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    transition: 0.5s;
+}
+
+#btn-desencriptar:hover{
+    background-color: #D8DFE8
+    
+}
+
+#btn-encriptar:hover{
+    background-color: #195195;
+}
+
+.button-panel{
+    align-self: flex-start;
 }
 
 .output-content{
@@ -96,20 +194,21 @@ body{
 #btn-copiar{
     font-family: sans-serif;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     line-height: normal;
-    width: 336px;
+    width: 328px;
     padding: 20px;
     border-radius: 24px;
     background-color: #FFFFFF;
     color:#0A3871;
     border: 1px solid  #0A3871;
+    transition: 0.5s;
 }
 
 #btn-copiar:hover{
     background-color: #D8DFE8;
-    transition: 0.5s;
+    
 }
 
 
@@ -122,11 +221,33 @@ body{
     color: #495057;
     font-size: 20px;
     width: 85%;
-    height: 72%;
+    height: 81%;
 }
 
 #area-output:focus{
-    outline: blue;
+    outline: none;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    margin-bottom: 15px;
+}
+
+#name-content p{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    color: #0A3871;
+}
+
+#social-content{
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
 }
 
 

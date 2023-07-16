@@ -26,9 +26,12 @@
         <div class="textAreaInput-content">
             <form class="form-encriptar" id="form-content">
            
-                <textarea id="area-encriptar" cols="80" rows="30"></textarea>
-                <img src="/src/Advertensia.png" alt="Solo minúsculas y sin acentos">
+                <textarea id="area-encriptar" placeholder="Ingrese el texto aqui"></textarea>
                 
+                <div class="img-advert">
+                <img src="/src/Advertensia.png" alt="Solo minúsculas y sin acentos">
+                </div>
+
                 <div class="button-panel">
                     <input type="button" class="btn" id="btn-encriptar" value="Encriptar" onclick="encriptar()">
                     <input type="button" class="btn" id="btn-desencriptar" value="Desencriptar" onclick="desencriptar()">
@@ -49,7 +52,7 @@
 
         <div class="output-div" id="textAreaOutPut-content">
             
-            <textarea id="area-output" ></textarea>
+            <textarea id="area-output" disabled></textarea>
             <input type="button" class="btn" id="btn-copiar" value="Copiar" onclick="copyText()">
         </div> 
 
@@ -62,8 +65,9 @@
         <p>Javier Eduardo Montes Delgado</p>
     </div>
     <div class="foot-div" id="social-content">
-        <a href="https://github.com/JaxLoz" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #0a3871;"></i></a>
-        <a href="https://www.linkedin.com/in/javiermontesdelgado/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0a3871;"></i></a>
+        <a id="git-logo" href="https://github.com/JaxLoz" target="_blank"><i class="fa-brands fa-github fa-xl" style="color: #0a3871;"></i></a>
+        <spam>|</spam>
+        <a id="in-logo" href="https://www.linkedin.com/in/javiermontesdelgado/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" style="color: #0a3871;"></i></a>
     </div>
 </footer>
 
